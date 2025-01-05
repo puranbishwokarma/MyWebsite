@@ -18,6 +18,26 @@
             color: white;
             text-align: center;
             padding: 4rem 1rem;
+            position: relative;
+        }
+
+        .cover-photo {
+            background-color: #6c757d;
+            height: 200px;
+            margin-bottom: -100px;
+            position: relative;
+        }
+
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid white;
+            background-color: #dee2e6;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            top: 100%;
         }
 
         .hero h1 {
@@ -65,11 +85,14 @@
 
 <body>
     <header class="hero">
-        <h1>Puran Bishwokarma</h1>
+        <div class="cover-photo"></div>
+        <div class="profile-photo"></div>
+        <h1 class="mt-5">Puran Bishwokarma</h1>
         <p class="subtitle">Motion Graphics Designer</p>
         <p>Hi, I'm Puran Bishwokarma, a passionate Motion Graphics Designer with over 4 years of experience bringing
             stories to life through creative visuals. Based in Nepal, I specialize in crafting engaging animations,
             eye-catching video edits, and immersive designs that resonate with audiences.</p>
+        <p><strong>I need Colouriz</strong></p>
         <a href="#portfolio" class="btn btn-primary mt-3">View My Work</a>
     </header>
 
@@ -112,24 +135,6 @@
                 <div class="col-md-4">
                     <img src="https://via.placeholder.com/300x200" alt="Project 3">
                     <p class="mt-2">Project 3 - Social Media Graphics</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="testimonials mb-5">
-            <h2 class="section-title">What Clients Say</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <blockquote class="blockquote">
-                        <p>"Puran's animations brought our brand to life. We couldn’t be happier with the results!"</p>
-                        <footer class="blockquote-footer">Client Name</footer>
-                    </blockquote>
-                </div>
-                <div class="col-md-6">
-                    <blockquote class="blockquote">
-                        <p>"Professional, creative, and highly skilled – Puran exceeded all our expectations."</p>
-                        <footer class="blockquote-footer">Client Name</footer>
-                    </blockquote>
                 </div>
             </div>
         </section>
